@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/timg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
+
+        <!-- Email Label -->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/cardview_light_background">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="318dp"
+                android:layout_height="55dp"
+                android:background="@color/cardview_light_background"
+                android:hint="用户名"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/cardview_light_background">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="318dp"
+                android:layout_height="55dp"
+                android:background="@color/cardview_light_background"
+                android:hint="密码"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@color/cardview_light_background"
+            android:gravity="center"
+            android:text="还没有账号吗？注册一个吧"
+            android:textColor="@color/colorAqua"
+            android:textSize="16dip" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorAquaDark"
+            android:elevation="@dimen/activity_vertical_margin"
+            android:padding="12dp"
+            android:stateListAnimator="@drawable/ic_dashboard_black_24dp"
+            android:text="登陆" />
+
+    </LinearLayout>
+</ScrollView>
